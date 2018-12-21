@@ -1,0 +1,68 @@
+% ---
+% Dylan Gardner's Resume
+% ---
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[blue]{classic}
+
+% Document Layout
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+
+% Personal Information
+\firstname{Dylan}
+\familyname{Gardner}
+\extrainfo{Salt Lake City, Utah}
+\email{dylan [at] gardnermedia.com}
+\mobile{Redacted Phone. Email for unredacted copy.}
+\homepage{www.github.com/dylngg}
+
+\title{Dylan Gardner's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+% Document Modifications
+\closesection{}
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\maketitle
+
+\section{Computer Skills}
+  \cvline{Languages \& Skills (Ordered by experience)}{Python, Linux, Java, C++, Bash, C\#}
+\section{Relevant Coursework}
+  \cvlistitem{Software Practice I \& II}
+  \cvlistitem{Data Structures and Algorithms}
+  \cvlistitem{Linear Algebra}
+\section{Experience}
+  \cventry{March 2018 -- Present}{Student Employee}{Center For High Performance Computing (CHPC)}{University of Utah}{}{
+      \begin{itemize}
+        \item Spearheaded research and development of a Python program that uses Linux cgroups to monitor and manage abusive behavior on shared machines.
+        \item Created Linux privilege reporter to catch and help users attempting invalid sudo commands.
+        \item Constructed a Spacewalk (RH Satellite) Kickstart profile for automatic setup and configuration of interactive nodes.
+      \end{itemize}
+  }
+  \cventry{Summer 2016}{Networking Intern}{Canyons School District}{Sandy, UT}{}{
+    \begin{itemize}
+      \item Set up, planned and configured network switches and access points.
+      \item Took calls to assist parents with online registration for the upcoming school year.
+      \item Helped create a Java application that led to \~{}2x faster configuration of switches.
+    \end{itemize}
+  }
+\section{Education}
+  \cventry{Fall 2020}{B.S. Computer Science}{University of Utah}{}{Overall GPA: 3.584}{}
+\section{Projects}
+  \cventry{}{Sprite Editor}{}{Created a C++ sprite editor that saves gifs and sprite metadata in a custom format}{For Software Practice II}{}
+  \cventry{}{Salt Lake City Crime Heatmap}{}{A interactive Javascript heatmap of Salt Lake City parsed and converted using Python \& Pandas from open police data.}{At \httplink[]{dylngg.github.io/slc-crime-heatmap/}}{}
+  \cventry{}{24hr Hackathon Project}{32 Bit Todo}{Took part of the University of Utah's 2018 Hackathon. Learned the basics of ReactJS and collaborated a todo app service in less than 24 hours}{}{}
+  \cventry{}{Boggle Game}{}{Developed C\# application and a asynchronous server using a REST API to play a game of boggle}{For Software Practice I}{}
+\end{document}
