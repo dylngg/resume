@@ -193,7 +193,7 @@
 %-------------------------------------------------------------------------------
 %                style commands definitions
 %-------------------------------------------------------------------------------
-% symbols used 
+% symbols used
 \providecommand*{\listitemsymbol}{\Neutral}%{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
 \providecommand*{\addresssymbol}{}
 \providecommand*{\mobilesymbol}{\Mobilefone}
@@ -310,13 +310,13 @@
 
 % usage: \section{<title>}
 \newcommand*{\section}[1]{%
-  \vspace*{1ex}%
   \parbox[m]{\hintscolumnwidth}{\raggedleft\hintfont{\color{sectionrectanglecolor}\rule{\hintscolumnwidth}{1ex}}}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{part}{#1}%
   \hspace{\separatorcolumnwidth}%
   \parbox[m]{\maincolumnwidth}{\sectionstyle{#1}}%
   \par\nobreak\vskip 1ex\@afterheading}% to avoid a pagebreak after the heading
+  \vspace*{1.2ex}%
 % starred variant, which is identical but defined to allow its use (e.g. for natbib compatibility, who uses \section*{} for the bibliography header)
 \AtEndPreamble{%
   \@ifpackageloaded{natbib}
@@ -363,9 +363,9 @@
 \newcommand*{\cventry}[6]{%
   \cvline{#1}{%
     {\bfseries#2}%
-    \ifthenelse{\equal{#3}{}}{}{, {\slshape#3}}%
-    \ifthenelse{\equal{#4}{}}{}{, #4}%
-    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#3}{}}{}{ {\slshape#3}}%
+    \ifthenelse{\equal{#4}{}}{}{ #4}%
+    \ifthenelse{\equal{#5}{}}{}{ #5}%
     .%
     \ifx&#6&%
       \else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi%
