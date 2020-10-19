@@ -37,21 +37,27 @@
 
 \maketitle
 
-\section{Computer Skills}
-  \cvline{Languages \& Skills}{Python, C, C++, Linux sysadmin, Git, Java, Bash, SQLite, C\#, HTML/CSS, Javascript}
+\section{Programming Languages \& Skills}
+  \cvline{}{Python, Golang, Linux sysadmin, C, C++, Git, Bash, PostgreSQL, HTML/CSS, Javascript} \\
 \section{Education}
-  \cventry{Fall 2020}{B.S. Computer Science}{University of Utah}{Junior}{Overall GPA: \emph{3.483}}{}
-  \cvlistitem{Software Practice I \& II}
+  \cventry{Fall 2020}{B.S. Computer Science}{University of Utah}{}{GPA: 3.475}{}
   \cvlistitem{Data Structures and Algorithms}
-  \cvlistitem{Computer Systems} \\
+  \cvlistitem{Operating Systems}
+  \cvlistitem{Distributed Systems} \\
 \section{Experience}
   \cventry{March 2018 -- Present}{Technical Assistant}{Center For High Performance Computing (CHPC)}{University of Utah}{}{
       \begin{itemize}
-          \item Researched and collaborated on a \httplink[Linux daemon in Python]{https://gitlab.chpc.utah.edu/arbiter2/arbiter2} called Arbiter2 that automated enforcement of acceptable usage policies on shared nodes; \emph{Used at CHPC and several other HPC centers nationwide}.
-        \item Published a ACM paper on the software above that was presented at a national HPC conference (PEARC). Won best poster award for that software at a regional HPC conference (RMACC).
-        \item Developed various tools (Python, Bash) and software to help manage and monitor clusters, saving countless hours.
+          \item Researched and collaborated on a Linux daemon in Python called Arbiter2 that automated enforcement of acceptable usage policies on shared nodes; \emph{Used at CHPC and a number of other HPC centers nationwide}.
+          \item Published a ACM \textcolor{addresscolor}{\link[paper]{https://dylngg.github.io/resources/arbiterTechPaper.pdf}} on the software above that was presented at a national HPC conference (PEARC). Won best \textcolor{addresscolor}{\link[poster]{https://dylngg.github.io/resources/arbiterRMACC19Poster.pdf}} award for that software at a regional HPC conference (RMACC).
         \item Collaborating on a project to improve monitoring of CHPC's environment and network traffic using Prometheus, InfluxDB, SNMP and Grafana. \\
       \end{itemize}
+  }
+  \cventry{Summer 2020}{High Performance Computing Intern}{Idaho National Laboratory}{Idaho Falls, ID}{}{
+    \begin{itemize}
+        \item Worked with a fellow intern to bring a 15x speedup on a Python-based sensitive text obfuscator by creating a trie-based plaintext and regex optimizer.
+        \item Developed a user monitoring system using PostgreSQL to monitor logins/logouts across nodes. \\
+      % \item Measured and analyzed the performance impacts of node monitoring daemons on various High Performance Computing workloads. \\
+    \end{itemize}
   }
   \cventry{Summer 2016}{Networking Intern}{Canyons School District}{Sandy, UT}{}{
     \begin{itemize}
@@ -60,9 +66,8 @@
     \end{itemize}
   }
 \section{Projects}
-  \cventry{}{Salt Lake City Crime Heatmap}{}{A interactive Javascript heatmap of Salt Lake City crime parsed and converted using Python \& Pandas from open source data.}{At \httplink[]{dylngg.github.io/slc-crime-heatmap/}}{}
-  \cventry{}{Discord Email Notifier}{}{Developed a Python daemon using Discord's API to batch notifications to a email.}{At \httplink[]{https://github.com/dylngg/discord-notification-emailer}}{}
-  \cventry{}{userctl}{}{Currently developing a Linux D-Bus daemon in C that sets configurable limits on users and groups with systemd cgroups.}{At \httplink[]{https://github.com/dylngg/userctl}}{}
-  \cventry{}{Minimal Shell}{}{Created a minimal C shell with piping and foreground/background functionality.}{For Computer Systems}{}
+  \cventry{}{Salt Lake City Crime Heatmap}{}{A interactive Javascript heatmap of Salt Lake City crime parsed and converted using Python \& Pandas from open source data.}{At \textcolor{addresscolor}{\link[dylngg.github.io/slc-crime-heatmap/]{https://dylngg.github.io/slc-crime-heatmap/}}}{}
+  \cventry{}{Discord Email Notifier}{}{Developed a Python daemon using Discord's API to batch notifications to a email.}{At \textcolor{addresscolor}{\link[github.com/dylngg/discord-notification-emailer]{https://github.com/dylngg/discord-notification-emailer}}}{}
+  \cventry{}{userctl}{}{Currently developing a Linux D-Bus daemon in C that sets configurable limits on users and groups with systemd cgroups.}{At \textcolor{addresscolor}{\link[github.com/dylngg/userctl]{https://github.com/dylngg/userctl}}}{}
 \end{document}
 
